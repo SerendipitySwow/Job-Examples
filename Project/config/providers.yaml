@@ -1,0 +1,17 @@
+SwowCloud-Job:
+  BootApp:
+    - SwowCloud\Job\Config\ConfigProvider
+    - SwowCloud\Job\Event\EventProvider
+    - SwowCloud\Job\Logger\LoggerProvider
+    ## 服务启动一定要在最后
+    - SwowCloud\Job\Server\ServerProvider
+Job:
+  BootApp:
+    - SwowCloud\Job\Config\ConfigProvider
+    - SwowCloud\Job\Logger\LoggerProvider
+    - SwowCloud\Job\Event\EventProvider
+Dag:
+  BootApp:
+    - SwowCloud\Job\Config\ConfigProvider
+    - SwowCloud\Job\Logger\LoggerProvider
+    - SwowCloud\Job\Event\EventProvider
