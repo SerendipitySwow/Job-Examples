@@ -31,7 +31,8 @@ class PhpJob implements JobInterface
 
     public function handle() : void
     {
-        echo 'Project';
+        throw new \Exception('11111');
+        echo 'Project'.PHP_EOL;
     }
 
     public function canRetry(int $counter, mixed $error) : bool
